@@ -1,206 +1,107 @@
-@font-face {
-  font-family: Acrom-bold; /* Имя шрифта */
-  src: url(../fonts/acrom800.otf); /* Путь к файлу со шрифтом */
-}
-@font-face {
-  font-family: Acrom;
-  src: url(../fonts/acrom400.otf);
-}
-/* обнулення верхнього рядка */
 * {
   margin: 0;
-}
-/* для бокса */
-html {
+  padding: 0;
   box-sizing: border-box;
 }
-/* для всех елементов всех псевдоелементов */
-*. *::before,
-*::after {
-  box-sizing: inherit;
+ul {
+  list-style: none;
 }
+
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
-  width: 1170px;
+  width: 901px;
   margin: 0 auto;
 }
 
-p{
-	color: red;
-	font-size: 	24px;
-}
- /* зміна кольору при наведенні */
- .link:hover {
-	color: red;
+/* NAVIGATION */
+.navigation {
+  font-size: 0;
 }
 
-.box{
-	background-size: cover;
+.menu {
+  width: 901px;
+  height: 190px;
+  padding: 65px 0px 100px 165px;
 }
 
-body {
-  font-family: Acron; /*Присвоїти всьому тексту стиль Acron*/
-}
-
-.wrap {
-  width: 1024px;
-  margin: 0 auto; /*виравнивание текста в блоке по центру*/
-}
-
-header {
-  min-height: 450px;
-  background: url("../images/drive-download-20180723T204306Z-001/header_bg.png"); /*Фон*/
-  background-size: cover;
-}
-.top-line {
-  height: 85px;
-  background: rgba(3, 4, 5, 0.5);
-  padding: 40px 0px;
-}
-
-.phone {
-  color: #fff;
-  font-size: 23px;
-  font-family: Acrom;
-  float: right; /*текст вспливає та переміщуєьбся вправо*/
-}
-
-.callback {
-  font-family: Acrom;
-  font-size: 9px;
-  color: #fff;
-  background: none; /*установить прозрачний фон*/
-  border: 2px solid #018dc4; /*встановлення товщини рамки та її кольору*/
-  border-radius: 10px; /*встановлення зкруглення рамки*/
-  padding: 5px 10px; /*встановлення внутрішніх відступів*/
-  float: right;
-  margin-top: 35px; /*отступ сверху*/
-  margin-left: 20px; /*отступ слева*/
-}
-
-.logo {
-  margin-top: 20px;
-}
-
-h1 {
-  font-size: 31px;
-  color: #fff;
-  font-family: Acrom-bold;
-  margin-bottom: 40px;
-}
-
-h2 {
-  color: #00a9ea;
-  font-size: 19px;
-  margin-bottom: 50px;
-}
-.main {
-  text-align: center; /*вирівнювання тексту по центру*/
-  padding: 90px 0 130px 0; /*сверху справа снизу слева*/
-}
-
-.register {
-  color: #fff;
-  font-size: 10px;
-  font-family: Acrom-bold;
-  background: #ee6e22;
-  border-radius: 10px;
-  border: none; /*убрать границу*/
-  padding: 10px 5px; /* відступи зверху та знизу  злыва  та зправа*/
-  text-transform: uppercase; /*Всі великі букви*/
-}
-
-.calback2 {
-  float: none;
-}
-
-.calback2 img {
-  /*к изображениям что находятся  внутри callback*/
-  width: 14px;
-}
-
-.callback2 span {
-  position: relative;
-  top: -1px;
-}
-
-.divider {
-  height: 80px;
-  background: #ee6e22;
-}
-.program {
-  padding: 70px 0;
-  background: #fff;
-}
-.right {
-  width: 500px;
-  float: right;
-}
-h3 {
-  color: #231f20;
-  font-size: 43px;
-  font-family: Acro-bold;
-  margin-bottom: 45px; /*відстань до  тексту, що під ним*/
-}
-
-ul li {
-  color: #44c1f0;
-  font-size: 24px;
-  font-family: Acrol-bold;
-  margin-bottom: 15px;
-}
-.comment {
-  background: url(../images/drive-download-20180723T204306Z-001/bg_2.png);
-  background-size: cover;
-  padding: 80px 0 120px 0;
-}
-
-.comment img {
-  border-radius: 100%;
-  background-size: cover;
-  position: relative; /*позиціонування відносно свого початкового положення*/
-  left: 40px;
-  top: 40px;
-}
-.comment h3 {
-  color: #00a9ea;
-  font-size: 35px;
-  font-family: Acrom-bold;
-}
-
-.comment p {
-  color: #fff;
-  font-size: 19px;
-}
-.clear {
-  clear: both; /*для очистки полей, чтобы текст не вылазил*/
-}
-footer {
-  background: url(../images/drive-download-20180723T204306Z-001/bg_3.png);
-  background-size: cover;
-  padding: 100px 0;
-  color: #fff;
-}
-.col-3 {
-  width: 33.333%;
-  float: left;
-}
-.callback3 {
-  font-family: Acrom;
-  font-size: 9px;
-  color: #fff;
-  background: none; /*установить прозрачний фон*/
-  border: 2px solid #018dc4; /*встановлення товщини рамки та її кольору*/
-  border-radius: 6px; /*встановлення зкруглення рамки*/
-  padding: 5px 10px; /*встановлення внутрішніх відступів*/
-  /*margin-left: 40px;*/
-  width: 150px;
-}
-
-footer label {
+.menu-item {
   display: inline-block;
-  width: 100px;
+  text-align: right;
+  margin-right: 100px;
 }
 
-footer p {
-  margin-bottom: 20px;
+.menu-link {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: #7d7d7d;
+  text-transform: uppercase;
+}
+
+.menu-link:hover {
+  color: #8ecef8;
+}
+
+.menu-link-last {
+  margin-right: 0;
+}
+
+/* MAIN */
+.main {
+  width: 901px;
+  font-family: "Playfair Display", serif;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+/* ARTICLE  */
+
+.article {
+  display: inline-block;
+  width: 420px;
+  margin-right: 57px;
+}
+.article:nth-child(2n) {
+  margin-right: 0;
+}
+
+.article-image {
+  margin-bottom: 32px;
+}
+
+.article-title {
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+.article-subtitle {
+  box-sizing: border-box;
+  width: 420px;
+  margin-bottom: 130px;
+}
+
+.article-description {
+  display: inline-block;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.main-btn {
+  display: block;
+  width: 176px;
+  height: 46px;
+  border-width: 1px;
+  border-color: rgb(98, 98, 98);
+  border-style: solid;
+  background-color: transparent;
+  font-size: 20px;
+  color: rgb(98, 98, 98);
+  margin: 0 auto;
 }

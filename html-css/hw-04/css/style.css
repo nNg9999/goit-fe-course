@@ -87,6 +87,8 @@ img {
 .product__title {
   font-size: 48px;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   color: #515151;
   margin-bottom: 130px;
@@ -166,6 +168,8 @@ img {
 .latest__title {
   font-size: 48px;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   color: #515151;
   margin-bottom: 120px;

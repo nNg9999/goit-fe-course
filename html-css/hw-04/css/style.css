@@ -24,11 +24,6 @@ img {
   clear: both;
 }
 
-.container {
-  width: 1110px;
-  margin: 0 auto;
-  background-color: transparent;
-}
 .header {
   width: 1110px;
   margin: 0 auto;
@@ -70,7 +65,8 @@ img {
   font-size: 14px;
   text-transform: uppercase;
 }
-.menu-link:hover {
+.menu-link:hover,
+.menu-link:focus {
   color: #1abc9c;
 }
 
@@ -112,6 +108,7 @@ img {
   background: #aaa;
   margin-bottom: 30px;
 }
+
 .product__list-item:nth-child(n + 4) {
   margin-bottom: 0;
 }
@@ -119,12 +116,16 @@ img {
 .product__list-item-btn {
   width: 255px;
   height: 40px;
-  background: #323232;
+  background-color: #323232;
   border: none;
 }
 
-.product__list-item-btn:hover {
-  background: rgb(26, 188, 156);
+.product__list-item:hover .product__list-item-btn {
+  background-color: rgb(26, 188, 156);
+}
+
+.product__list-item:hover .product__list-item-price {
+  background-color: rgb(127, 217, 199);
 }
 
 .product__list-item-text,
@@ -141,9 +142,9 @@ img {
   padding: 10px 0px 0px 12px;
 }
 
-.product__list-item-text:hover {
+/* .product__list-item-text:hover {
   background: rgb(26, 188, 156);
-}
+} */
 
 .product__list-item-price {
   float: right;
@@ -151,9 +152,9 @@ img {
   background: #8c8c8c;
   padding: 10px 14px 0px 14px;
 }
-.product__list-item-price:hover {
+/* .product__list-item-price:hover {
   background: rgb(127, 217, 199);
-}
+} */
 
 .product__list-item:not(:nth-child(4n)) {
   margin-right: 30px;
@@ -224,6 +225,7 @@ img {
   width: 160px;
   height: 50px;
   background: #4ec6ab;
+  border-radius: 5px;
   color: rgb(255, 255, 255);
   font-family: "Open Sans", sans-serif;
   font-weight: 400;

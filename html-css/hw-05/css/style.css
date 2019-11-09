@@ -367,7 +367,8 @@ img {
   padding-top: 36px;
 }
 .footer__title,
-.footer__link {
+.footer__link,
+.footer__text-link {
   display: inline-block;
   font-family: "OpenSans", sans-serif;
   color: #fff;
@@ -375,8 +376,13 @@ img {
 }
 
 .footer__link {
-  display: inline-block;
+  /* display: inline-block; */
   float: right;
+}
+.footer__text-link {
+  display: inline-block;
+  padding-left: 8px;
+  border-left: 1px solid #fff;
 }
 .footer__link:hover {
   color: #419989;

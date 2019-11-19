@@ -27,7 +27,7 @@ img {
 }
 
 .navigation {
-  /* width: 1200px; */
+
   height: 50px;
   display: flex;
   flex-wrap: wrap;

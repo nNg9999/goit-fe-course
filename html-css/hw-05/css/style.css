@@ -88,8 +88,8 @@ img {
   height: 600px;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  background-image: url("../img/slayder.jpg");
-  background-repeat: no-repeat;
+   background-image: url("../img/slayder.jpg");
+   background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -387,3 +387,4 @@ img {
 .footer__link:hover {
   color: #419989;
 }
+

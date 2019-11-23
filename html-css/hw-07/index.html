@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Zelinskyi_homework7</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <img src="../hw-07/img/team/img_1.jpg" alt="img1" >
+  <header class="header">
+    <nav class="navigation">
+      <a href="" class="logotype">
+        <img src="./img/logo.png" alt="logo" class="logotype__img" width="79" height="28">
+      </a>
+      <ul class="header__list">
+        <li class="header__list-item"><a href="#" class="header__list-link">Home</a></li>
+        <li class="header__list-item"><a href="#" class="header__list-link">Services</a></li>
+        <li class="header__list-item"><a href="#" class="header__list-link">Portfolio</a></li>
+        <li class="header__list-item"><a href="#" class="header__list-link">About</a></li>
+        <li class="header__list-item"><a href="#" class="header__list-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="services">
+      <h2 class="sections-title">SERVICES</h2>
+      <p class="sections-subtitle">Proin iaculis purus consequat sem cure.</p>
+      <ul class="services__list">
+        <li class="services__list-item">
+          <h3 class="services__list-title">E-Commerce</h3>
+          <p class="services__list-text">Proin iaculis purus consequat sem cure
+            digni ssim. Donec porttitora entum suscipit
+            aenean rhoncus posuere odio in tincidunt.</p>
+        </li>
+        <li class="services__list-item">
+          <h3 class="services__list-title">Responsive Web</h3>
+          <p class="services__list-text">Proin iaculis purus consequat sem cure
+            digni ssim. Donec porttitora entum suscipit
+            aenean rhoncus posuere odio in tincidunt.</p>
+        </li>
+        <li class="services__list-item">
+          <h3 class="services__list-title">Web Security</h3>
+          <p class="services__list-text">Proin iaculis purus consequat sem cure
+            digni ssim. Donec porttitora entum suscipit
+            aenean rhoncus posuere odio in tincidunt.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <h2 class="footer-title">Contact us</h2>
+    <p class="footer-subtitle">Proin iaculis purus consequat sem cure.</p>
+    <form action="" class="footer__form">
+      <div class="footer__form-wrapper">
+        <div class="footer__form-input-wrapper">
+          <input name="name" type="text" class="footer__form-input" placeholder="Your Name*" required minlength="3">
+          <input name="email" type="email" class="footer__form-input" placeholder="Your E-mail*" required>
+          <input name="subject" type="text" class="footer__form-input" placeholder="Your subject">
+        </div>
+        <textarea name="message" cols="30" rows="10" class="footer__form-textarea"
+          placeholder="Your message"></textarea>
+      </div>
+      <div class="footer__form-btn-wrapper">
+        <button type="submit" class="footer__form-btn">Send message</button>
+      </div>
+    </form>
+  </footer>
 </body>
+
 </html>

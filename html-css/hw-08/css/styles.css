@@ -322,7 +322,7 @@ img {
   .navigation {
     width: 950px;
     margin: 0 auto;
-    padding: 20px 50px 150px 50px;
+    padding-bottom: 150px;
   }
   .partner-container {
     width: 940px;

@@ -95,6 +95,7 @@ img {
   text-align: center;
 }
 .logotype:hover {
+  color: white;
   transition: all 0.2s linear;
 }
 

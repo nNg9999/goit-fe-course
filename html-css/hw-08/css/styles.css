@@ -65,33 +65,24 @@ img {
 }
 
 .header {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-content: center;
-
-}
-
-.container {
   width: 320px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../img/header_fon_320.jpg");
+    url("../img/header_fon_320.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-color: transparent;
-  padding-bottom: 140px;
   background-size: cover;
 }
 
+.header-container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 20px 0px 140px 0px;
+}
+
 .navigation {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  padding: 20px 10px 40px 10px;
+  margin-bottom: 38px;
 }
 
 .logotype {
@@ -104,18 +95,20 @@ img {
   text-align: center;
 }
 .logotype:hover {
-  color: yellowgreen;
+  color:rgb(174, 175, 173);
   transition: all 0.2s linear;
 }
 
 .header__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 115px;
+  margin-bottom: 115px;
 }
 
 .header__list-item {
+  text-align: center;
 }
 
 .header__list-link {
@@ -130,24 +123,18 @@ img {
   color: white;
 }
 
-.header__list-item:nth-child(2) .header__list-link {
-  border: 2px solid #fff;
-  border-radius: 36px;
-}
-.header__list-item:nth-child(2):hover .header__list-link {
-  border: 2px solid yellowgreen;
+.header__list-item:hover .header__list-link {
+  border: 2px solid white;
   border-radius: 36px;
   transition: all 0.2s linear;
 }
 
 .header__list-link:hover {
-  color: yellowgreen;
-  transition: all 0.2s linear;
+   transition: all 0.2s linear;
 }
 
 .header__title {
   display: block;
-  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   color: white;
@@ -155,7 +142,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 16px;
-  padding: 0px 16px;
+  letter-spacing: -0.8px;
 }
 
 .header__subtitle {
@@ -166,7 +153,8 @@ img {
   font-size: 18px;
   color: white;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  padding: 0px 30px;
 }
 
 .header__button {
@@ -181,10 +169,8 @@ img {
   font-weight: 700;
   font-size: 14px;
   color: white;
-    border: none;
+  border: none;
   margin: 0 auto;
-  margin-top: -100px;
-  
 }
 
 /* partner */
@@ -193,7 +179,7 @@ img {
 }
 
 .partner-container {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 60px;
@@ -209,13 +195,18 @@ img {
 }
 
 .partner__list-owerlay {
+  width: 122px;
+  height: 122px;
+  margin: 0 auto;
   position: relative;
 }
 
-.partner__list-label {
+.partner__list-owerlay::before {
+  display: block;
+  content: "";
   position: absolute;
   bottom: 0;
-  right: 30%;
+  right: 0;
   border: 4px solid rgb(255, 255, 255);
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -224,19 +215,19 @@ img {
   height: 33px;
 }
 
-.partner__list-item:nth-child(1) .partner__list-label {
+.partner__list-item:nth-child(1) .partner__list-owerlay::before {
   background-image: url("../img/patern/img11.png");
   background-color: rgb(255, 78, 80);
 }
-.partner__list-item:nth-child(2) .partner__list-label {
+.partner__list-item:nth-child(2) .partner__list-owerlay::before {
   background-image: url("../img/patern/img22.png");
   background-color: rgb(255, 165, 7);
 }
-.partner__list-item:nth-child(3) .partner__list-label {
+.partner__list-item:nth-child(3) .partner__list-owerlay::before {
   background-image: url("../img/patern/img33.png");
   background-color: rgb(28, 215, 173);
 }
-.partner__list-item:nth-child(4) .partner__list-label {
+.partner__list-item:nth-child(4) .partner__list-owerlay::before {
   background-image: url("../img/patern/img44.png");
   background-color: rgb(78, 115, 219);
 }
@@ -245,7 +236,6 @@ img {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 22px;
-  /* text-transform: uppercase; */
   text-align: center;
   margin-bottom: 28px;
   color: #555555;
@@ -286,57 +276,74 @@ img {
   color: #ff4e50;
   margin: 0 auto;
 }
-@media (min-width: 320px) {
-  .container {
+
+@media (min-width: 768px) {
+  .header {
     width: 768px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../img/header_fon_768.jpg");
+      url("../img/header_fon_768.png");
+  }
+  .header-container {
+    width: 660px;
+    padding: 40px 0px 150px 0px;
   }
   .navigation {
-    width: 677px;
-    margin: 0 auto;
-    flex-direction: row;
+    display: flex;
+    width: 660px;
+    flex-direction: row-reverse;
+    align-items: center;
     justify-content: space-between;
-    padding: 20px 50px 100px 50px;
+    margin-bottom: 150px;
+  }
+  .header__list {
+    width: 180px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .header__title {
+    font-size: 50px;
+    letter-spacing: 0px;
+    padding: 0px 50px;
+    margin-bottom: 40px;
+  }
+  .header__subtitle {
+    margin-bottom: 33px;
   }
 
   .partner-container {
-    width: 767px;
+    width: 492px;
   }
   .partner__list {
-    width: 480px;
-    margin: 0 auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .header__list {
-    padding-bottom: 0px;
-  }
-  .partner__list-item {
-    margin: 0 auto;
+
+  .partner__list-item:nth-child(2n) {
+    order: 1;
   }
   .partner__list-text {
     margin-bottom: 40px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
-  .container {
+@media (min-width: 960px) {
+  .header {
     width: 1440px;
-    margin: 0 auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../img/header_fon.jpg");
+      url("../img/header_fon.png");
+  }
+  .header-container {
+    width: 942px;
   }
   .navigation {
-    width: 950px;
-    margin: 0 auto;
-    padding-bottom: 150px;
+    width: 942px;
+  }
+  .partner {
+    width: 1440px;
   }
   .partner-container {
-    width: 940px;
-  }
-  .partner__list {
-    width: 940px;
+    width: 942px;
   }
 }

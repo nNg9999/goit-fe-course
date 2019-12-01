@@ -375,7 +375,11 @@ img {
       url("../img/header_fon.png");
   }
   .header-container {
-    width: 942px;
+    width: 940px;
+  }
+  
+  .header-row1 {
+    width: 930px;
   }
   .header__title {
     padding: 0px 200px;

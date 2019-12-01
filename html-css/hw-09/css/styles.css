@@ -67,7 +67,7 @@ img {
 .header {
   width: 320px;
 
-  margin: 0 auto;
+  /* margin: 0 auto; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../img/header_fon_320.png");
   background-repeat: no-repeat;

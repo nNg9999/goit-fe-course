@@ -337,7 +337,7 @@ img {
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* margin-bottom: 150px; */
+  
   }
 
   .header__list {
@@ -380,13 +380,8 @@ img {
   .header__title {
     padding: 0px 200px;
   }
-  .navigation {
-    width: 942px;
-  }
-  .partner {
-    width: 1440px;
-  }
-  .partner-container {
+  
+    .partner-container {
     width: 942px;
   }
 }

@@ -64,7 +64,6 @@ img {
   height: auto;
 }
 
-
 .header {
   width: 320px;
   margin: 0 auto;
@@ -344,7 +343,7 @@ img {
   .header__title {
     font-size: 50px;
     letter-spacing: 0px;
-    padding: 0px 50px;
+    padding: 0px 80px;
     margin-bottom: 40px;
   }
   .header__subtitle {
@@ -377,6 +376,9 @@ img {
   }
   .header-container {
     width: 942px;
+  }
+  .header__title {
+    padding: 0px 200px;
   }
   .navigation {
     width: 942px;

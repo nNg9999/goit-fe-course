@@ -59,7 +59,7 @@ html {
   .container, .container-sm {
     max-width: 540px;
   }
-}
+} 
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {

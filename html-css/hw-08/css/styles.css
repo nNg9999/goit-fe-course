@@ -65,7 +65,7 @@ img {
 }
 
 .header {
-  width: 320px;
+  
   margin: 0 auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../img/header_fon_320.png");
@@ -279,7 +279,7 @@ img {
 
 @media (min-width: 768px) {
   .header {
-    width: 768px;
+    
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url("../img/header_fon_768.png");
   }
@@ -330,7 +330,7 @@ img {
 
 @media (min-width: 960px) {
   .header {
-    width: 1440px;
+    
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url("../img/header_fon.png");
   }
@@ -341,7 +341,7 @@ img {
     width: 942px;
   }
   .partner {
-    width: 1440px;
+    width: 942px;
   }
   .partner-container {
     width: 942px;

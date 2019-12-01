@@ -360,9 +360,7 @@ img {
     flex-wrap: wrap;
   }
 
-  .partner__list-item:nth-child(2n) {
-    order: 1;
-  }
+  
   .partner__list-text {
     margin-bottom: 40px;
   }

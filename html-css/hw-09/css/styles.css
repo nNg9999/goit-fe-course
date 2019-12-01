@@ -382,7 +382,7 @@ img {
     width: 942px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .header__title {
     padding: 0px 300px;
   }

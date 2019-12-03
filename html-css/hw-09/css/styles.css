@@ -164,7 +164,6 @@ img {
   cursor: pointer;
   width: 280px;
   height: 40px;
-  border-style: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
   background-color: rgb(255, 78, 80);
   font-family: "Montserrat", sans-serif;
@@ -179,6 +178,7 @@ img {
 .partner {
   margin: 0 auto;
 }
+
 
 .partner-container {
   width: 280px;
@@ -316,7 +316,9 @@ img {
   .team [class*="col-"]:not(:last-child) {
     margin-bottom: 30px;
   }
+  
 }
+
 
 @media (min-width: 768px) {
   .header {
@@ -329,7 +331,7 @@ img {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
   }
 

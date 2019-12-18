@@ -179,7 +179,6 @@ img {
   margin: 0 auto;
 }
 
-
 .partner-container {
   width: 280px;
   padding-top: 70px;
@@ -273,7 +272,7 @@ img {
   font-size: 22px;
   text-align: center;
   margin-bottom: 28px;
-   color: #555555;
+  color: #555555;
 }
 
 .partner__list-title {
@@ -316,9 +315,7 @@ img {
   .team [class*="col-"]:not(:last-child) {
     margin-bottom: 30px;
   }
-  
 }
-
 
 @media (min-width: 768px) {
   .header {
@@ -331,7 +328,6 @@ img {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
   }
 

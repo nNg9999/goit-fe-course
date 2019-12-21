@@ -122,7 +122,7 @@
     }
 
     &:hover &-svg {
-      fill: #fff;
+      fill: $main-color;
     }
   }
 
@@ -142,14 +142,14 @@
     }
 
     &:hover &-svg {
-      fill: #fff;
+      fill: $main-color;
     }
   }
 
   &__link-svg {
     width: 50%;
     height: 50%;
-    fill: #f38181;
+    fill: $team-hover-color;
     transition: fill 200ms linear;
   }
 }

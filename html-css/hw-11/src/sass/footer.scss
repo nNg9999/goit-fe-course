@@ -28,7 +28,7 @@
 
 .wrapper {
   width: 300px;
-  @include flex ($flexWrap: nowrap, $justifyContent: none);
+  @include flex ($flexWrap: nowrap);
 }
 
 .form {

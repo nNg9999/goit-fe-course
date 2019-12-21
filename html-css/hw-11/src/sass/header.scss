@@ -10,9 +10,7 @@
 
   @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
-    .header {
-      @include gradient-bg-image('../images/bg@x2.jpg');
-    }
+    @include gradient-bg-image('../images/bg@x2.jpg');
   }
 
   &__title {
@@ -32,8 +30,6 @@
   }
 
 }
-
-
 
 .container {
   width: 1201px;
@@ -128,9 +124,6 @@
     }
   }
 }
-
-
-
 
 .modal-btn {
   @include font($main-font, 14px, 700, 1.15);

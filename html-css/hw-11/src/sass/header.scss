@@ -1,8 +1,4 @@
-.header-wrapper {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 130px 170px 230px 170px;
-}
+
 
 .header {
   margin: 0 auto;
@@ -11,6 +7,12 @@
   @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
     @include gradient-bg-image('../images/bg@x2.jpg');
+  }
+
+  &-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 130px 170px 230px 170px;
   }
 
   &__title {
@@ -28,7 +30,7 @@
     text-align: center;
     margin-bottom: 85px;
   }
-
+  
 }
 
 .container {

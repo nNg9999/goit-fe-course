@@ -1,15 +1,39 @@
+.header-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 130px 170px 230px 170px;
+}
+
 .header {
   margin: 0 auto;
-
   @include gradient-bg-image('../images/bg.jpg');
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    .header {
+      @include gradient-bg-image('../images/bg@x2.jpg');
+    }
+  }
+
+  &__title {
+    margin: 0;
+    color: $main-color;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 118px;
+    @include font($main-font, 150px, 700, 0.9);
+  }
+
+  &__subtitle {
+    @include font($suplemented-font, 72px, 400, 1.15);
+    color: $main-color;
+    text-align: center;
+    margin-bottom: 85px;
+  }
+
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-  .header {
-    @include gradient-bg-image('../images/bg@x2.jpg');
-  }
-}
+
 
 .container {
   width: 1201px;
@@ -105,27 +129,8 @@
   }
 }
 
-.header-wrapper {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 130px 170px 230px 170px;
-}
 
-.header__title {
-  margin: 0;
-  color: $main-color;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 118px;
-  @include font($main-font, 150px, 700, 0.9);
-}
 
-.header__subtitle {
-  @include font($suplemented-font, 72px, 400, 1.15);
-  color: $main-color;
-  text-align: center;
-  margin-bottom: 85px;
-}
 
 .modal-btn {
   @include font($main-font, 14px, 700, 1.15);
